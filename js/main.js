@@ -12,14 +12,7 @@ const DOM_Elements = {
     weathers: '.weather-list'
 }
 
-// Create weather list html
-// const weatherInfo = (temp, feels_like, high, low, condition, humidity) =>{
-//     const html = `<a href='#' class= 'list-group-item list-group-item-action list-group-item-light'>
-//     Temp: ${temp} | Feels Like: ${feels_like} | low: ${low} | high: ${high} | condition: ${condition} | humidity: ${humidity}</a>`
 
-
-//     document.querySelector(DOM_Elements.weathers).insertAdjacentHTML("beforeend", html)
-// }
 
 // Function to load weather data
 const loadData = async (formCity) =>{
