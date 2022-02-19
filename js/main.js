@@ -40,7 +40,8 @@ const loadData = async (formCity) =>{
     console.log(appCity, temp, feelsLike, tempMax, tempMin, cond, humid)
     
     const html = `<a href='#' class= 'list-group-item list-group-item-action list-group-item-light id=citytext'> - - - ${appCity} - - -  </a>
-    <a href='#' class= 'list-group-item list-group-item-action list-group-item-light'> Temp: ${temp} | Feels Like: ${feelsLike} | Current High: ${tempMax} | Current Low: ${tempMin} | Condition: ${cond} | Humidity: ${humid}</a>`
+    <a href='#' class= 'list-group-item list-group-item-action list-group-item-light'> Temp: ${temp}&#176 | Feels Like: ${feelsLike}&#176
+     | Recorded High: ${tempMax}&#176 | Recorded Low: ${tempMin}&#176 | Condition: ${cond} | Humidity: ${humid}%</a>`
     document.querySelector(DOM_Elements.weathers).insertAdjacentHTML("beforeend", html)
 }
 
